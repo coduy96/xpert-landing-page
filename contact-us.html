@@ -1,24 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Contact us</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 </head>
+
 <body>
 	<div class="container">
 		<div class="contact-box">
 			<div class="left"></div>
-			<div class="right">
-				<h2>Contact Us</h2>
-				<input type="text" class="field" placeholder="Your Name">
-				<input type="text" class="field" placeholder="Your Email">
-				<input type="text" class="field" placeholder="Phone">
-				<textarea placeholder="Message" class="field"></textarea>
-				<button class="btn">Send</button>
-			</div>
+			<form>
+				<div class="right">
+					<h2>Get Help Fast!</h2>
+					<input type="text" class="field" placeholder="Your Name" required>
+					<input type="text" class="field" placeholder="Your Email" required>
+					<input type="text" class="field" placeholder="Phone">
+					<textarea placeholder="Message" class="field" required></textarea>
+					<button class="btn">Send</button>
+				</div>
+			</form>
 		</div>
 	</div>
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+
+
+<script>
+	var firebaseConfig = {
+		apiKey: "AIzaSyAyxRgIRf-ca-Yk3tpZUeSIbdOOvmUioi4",
+		authDomain: "qnmemo-1be13.firebaseapp.com",
+		projectId: "qnmemo-1be13",
+		storageBucket: "qnmemo-1be13.appspot.com",
+		messagingSenderId: "969624046813",
+		appId: "1:969624046813:web:7d222dd2eaf8153d511f34"
+	};
+	firebase.initializeApp(firebaseConfig);
+</script>
+
+<script>
+	const db = firebase.firestore();
+	const form = document.querySelector('form');
+
+
+	form.addEventListener('submit', async (event) => {
+			event.preventDefault();
+
+			const name = document.querySelector('input[type="text"][placeholder="Your Name"]').value;
+			const email = document.querySelector('input[type="text"][placeholder="Your Email"]').value;
+			const phone = document.querySelector('input[type="text"][placeholder="Phone"]').value;
+			const message = document.querySelector('textarea[placeholder="Message"]').value;
+
+			db.collection("contacts").add({
+				name: name,
+				email: email,
+				phone: phone,
+				message: message
+			})
+				.then(() => {
+					//alert("Message sent successfully!");
+					const formContainer = document.querySelector('.container');
+					formContainer.innerHTML = '<div class="thankyou"><h2>Thank You for Reaching Out! We will Be in Touch Soon to Help You Out.</h2></div>';
+				})
+				.catch((error) => {
+					console.error("Error sending message: ", error);
+				});
+		}
+	);
+</script>
+
 </html>
