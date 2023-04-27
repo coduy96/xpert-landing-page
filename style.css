@@ -17,7 +17,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 20px 100px;
+	/* padding: 20px 100px; */
 }
 
 .container:after{
@@ -118,8 +118,4 @@ textarea{
 	.left{
 		height: 200px;
 	}
-}
-
-.error {
-	border-color: red;
 }
