@@ -14,3 +14,11 @@ include_in_header: true
 - Added authentication for secure access to the app
 
 Thank you for choosing our app! We hope you enjoy these new features and improvements.
+
+### `Product improvements`
+# **Version 1.0.1 Change Log:**
+
+- Improved microphone performance for better audio quality during recordings and calls.
+- Fixed misspelled words in the AI response, making it more accurate and reliable.
+
+Thank you for choosing our app! We hope you enjoy these new features and improvements.
