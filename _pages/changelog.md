@@ -22,3 +22,10 @@ Thank you for choosing our app! We hope you enjoy these new features and improve
 - Fixed misspelled words in the AI response, making it more accurate and reliable.
 
 Thank you for choosing our app! We hope you enjoy these new features and improvements.
+
+# **Version 1.0.2 Change Log:**
+
+- Improved performance for showing dialog
+- Fixed issue where no conversations were found on the home page
+
+Thank you for choosing our app! We hope you enjoy these new features and improvements.
