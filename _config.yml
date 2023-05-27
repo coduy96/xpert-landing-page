@@ -13,7 +13,7 @@ presskit_download_link                    :                                     
 app_icon                                  : assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  : Xpert                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 : Free Forever                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Enhance your Expertise.
+app_description                           : Enhance your Expertise with AI POWER!
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -33,19 +33,19 @@ youtube_username                          :
 
 
 # Feature List                            Edit, add or remove features to be presented.
-features                                  :
+# features                                  :
 
-  - title                                 : Expert advice at your fingertips.
-    description                           : With our user-friendly interface and 24/7 availability, expert advice is always just a fingertip away.
-    fontawesome_icon_name                 : magic
+#   - title                                 : Expert advice at your fingertips.
+#     description                           : With our user-friendly interface and 24/7 availability, expert advice is always just a fingertip away.
+#     fontawesome_icon_name                 : magic
 
-  - title                                 : Hear it from the Voice Assistant.
-    description                           : Whether you're on-the-go, commuting, or just want a hands-free way of consuming information.
-    fontawesome_icon_name                 : microphone
+#   - title                                 : Hear it from the Voice Assistant.
+#     description                           : Whether you're on-the-go, commuting, or just want a hands-free way of consuming information.
+#     fontawesome_icon_name                 : microphone
 
-  - title                                 : Copy your Expert advice!
-    description                           : Makes it easy to write compelling content that drives traffic and engagement. So why wait? Start sharing your expertise with the world today!
-    fontawesome_icon_name                 : clipboard
+#   - title                                 : Copy your Expert advice!
+#     description                           : Makes it easy to write compelling content that drives traffic and engagement. So why wait? Start sharing your expertise with the world today!
+#     fontawesome_icon_name                 : clipboard
 
 # Theme Settings
 topbar_color                              : "#000000"
