@@ -18,6 +18,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	/* padding: 20px 100px; */
+	
 }
 
 .container:after{
@@ -27,9 +28,9 @@ body{
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: url("img/appicon.png") no-repeat center;
+	/* background: url("assets/headerimage.jpg") no-repeat center; */
 	background-size: cover;
-	filter: blur(50px);
+	filter: blur(1px);
 	z-index: -1;
 }
 .contact-box{
@@ -40,12 +41,12 @@ body{
 	align-items: center;
 	text-align: center;
 	background-color: #fff;
-	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+
 }
 
 .left{
 	background: url("img/appicon.png") no-repeat center;
-	background-size: cover;
+	background-size: contain;
 	height: 100%;
 }
 
